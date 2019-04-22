@@ -46,6 +46,6 @@ The server is written in javascript for nodejs and runs from the command line.
 It runs on port `8080`.  Follow these instructions to run it:
 
 1. Install Nodejs
-2. Install the `ws` and `moment` packages into your Node environment
+2. Run `npm install`
 3. Run the server with the command `node server.js`
 4. To stop the server use `Ctrl-C`
