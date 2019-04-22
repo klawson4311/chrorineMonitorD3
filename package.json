@@ -1,0 +1,24 @@
+{
+  "name": "technical-challenge",
+  "version": "1.0.0",
+  "description": "Emagin front end technical challenge.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:EMAGIN/Cloud/Product/technical-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=8.11.3",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "ws": "^6.1.3"
+  }
+}
