@@ -12,10 +12,11 @@ console.log("Listening on port 8080"), wss.on("connection", function(e) {
 	console.log("sending data", t);
 	e.send(JSON.stringify(t));
 	let o = moment();
+	let count = 0;
 	setInterval(function() {
 		const n = pmt(o);
 		o.add(5, "minutes"), e.send(JSON.stringify(n))
-	}, 5e3)
+	}, 1e3)
 }), ukj = (e => {
 	let n = moment().subtract(24, "hours"),
 		t = [];

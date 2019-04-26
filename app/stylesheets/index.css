@@ -62,3 +62,94 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 3, ../sass/index.scss */
+h1 {
+  font-size: 2rem;
+}
+
+/* line 7, ../sass/index.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* line 11, ../sass/index.scss */
+body main {
+  flex: 1 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+/* line 17, ../sass/index.scss */
+body h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: #b8d3da;
+  text-shadow: 2px 2px #444;
+}
+
+/* line 27, ../sass/index.scss */
+#content {
+  text-align: center;
+  flex: 1 0;
+  display: flex;
+  box-sizing: border-box;
+  min-height: 300px;
+  width: 100%;
+  padding: 1rem;
+}
+/* line 35, ../sass/index.scss */
+#content #graph {
+  margin: auto;
+  position: relative;
+  display: inline-block;
+}
+/* line 39, ../sass/index.scss */
+#content #graph::before {
+  content: 'Chlorine Level (ppm)';
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  right: 100%;
+  width: 400px;
+  bottom: 100%;
+  position: absolute;
+  background-color: teal;
+  color: #fcf9f8;
+}
+/* line 55, ../sass/index.scss */
+#content #graph svg {
+  background-color: rgba(252, 249, 248, 0.6);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* line 59, ../sass/index.scss */
+#content #graph svg path#line {
+  fill: none;
+  stroke: teal;
+  stroke-width: 2px;
+}
+/* line 64, ../sass/index.scss */
+#content #graph svg g.axis {
+  font-size: 1rem;
+}
+
+/* line 73, ../sass/index.scss */
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/pool.jpg");
+  background-position: 20% 0;
+  background-size: cover;
+  z-index: -1;
+}
