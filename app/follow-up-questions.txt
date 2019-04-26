@@ -1,16 +1,18 @@
 Q-	How would you expand upon this?
  1) Y-Axis was hard-coded. Appropriate min/max values could've been calculated
  2) Better selection of tools/frameworks. (Not AngularJS)
- 3) Error handling provisions (ie. if/when the WebSocket disconnects.)
+ 3) Implement error handling provisions (ie. if/when the WebSocket disconnects.)
  4) Respond to page resizing
  5) Check feasibility using more accurate means (perhaps a z-score, or even just comparing it to the past value).
  6) Find a means much less obnoxious, and more effective than JS alerts.
  7) Add interaction (ex, show exact values upon hovering over the graph)
+ 8) Smooth graph transitions.
 
 
 Q- What worked well?
  D3 was really useful.  This was my first time using it, but I can see using it in other projects in the future.
  However, it appears that v4+ of D3 is significantly different than v3, which most tutorials use.
+ Bonus css was a breeze.
 
 
 Q-	Why AngularJS?
